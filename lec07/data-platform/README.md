@@ -20,17 +20,12 @@ dbt_deps_install → dbt_seed_iris → dbt_transform_iris → train_ml_model →
 
 ## Конфігурація
 
-### Schedule
+### Розклад
 
 - **Cron**: `"0 22 * * *"` (щодня о 22:00 UTC = 01:00 Київ)
 - **Start date**: 2025-04-22
 - **End date**: 2025-04-24
 - **Catchup**: True (виконано 3 runs)
-
-### Databases
-
-- **Analytics DB**: PostgreSQL з схемами `homework` та `ml_results`
-- **Airflow Metadata DB**: PostgreSQL
 
 ### Email notifications
 
