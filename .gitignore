@@ -205,3 +205,11 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# Pagila demo database (local only)
+lec3/pagila/
+lesson_03/pagila/
+pagila/
+
+# Docker volumes
+**/pgdata/
