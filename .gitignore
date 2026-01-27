@@ -26,6 +26,37 @@ share/python-wheels/
 *.egg
 MANIFEST
 
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+*.egg-info/
+
+# Data files (don't commit data!)
+file_storage/
+raw/
+stg/
+*.json
+*.avro
+# But keep example/fixture data for tests
+!tests/fixtures/*.json
+!examples/*.json
+
+#template dir
+tmp/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
 # PyInstaller
 #  Usually these files are written by a python script from a template
 #  before PyInstaller builds the exe, so as to inject date/other infos into it.
@@ -136,6 +167,7 @@ celerybeat.pid
 
 # Environments
 .env
+*.env
 .envrc
 .venv
 env/
